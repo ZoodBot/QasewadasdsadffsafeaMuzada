@@ -32,7 +32,7 @@ LET'S GO!
 
 client.on('ready', () => {
     console.log('Bot Is Ready Now !');
-    client.user.setGame(`inv | -play [ " ${client.guilds.size} " ] Users [ " ${client.users.size} " ]   `,"http://twitch.tv/xkilleryt")
+    client.user.setGame(`inv | -play `,"http://twitch.tv/xkilleryt")
     });
 
 
