@@ -36,22 +36,22 @@ client.on('ready', () => {
     });
 
 
-client.on('message',async message => {//Toxic Codes
-      if(message.content.startsWith("-restart")){//Toxic Codes
+client.on('message',async message => {
+      if(message.content.startsWith("-restart")){
           if(message.author.id !== "457732668155494402") return message.reply('You aren\'t the bot owner.');
-        message.channel.send('**Restarting.**').then(msg => {//Toxic Codes
-            setTimeout(() => {//Toxic Codes
+        message.channel.send('**Restarting.**').then(msg => {
+            setTimeout(() => {
                msg.edit('**Restarting..**');
-          //Toxic Codes  },1000);//Toxic Codes
+    },1000);
             setTimeout(() => {
                msg.edit('**✅ **').then(message =>{message.delete(5000)})
             },2000);
-    //Toxic Codes    });//Toxic Codes
-        console.log(`Restarting..`);//Toxic Codes
+    })
+        console.log(`Restarting..`);
         setTimeout(() => {
             client.destroy();
         },3000);
-    }//Toxic Codes
+    }
 });
 
 
