@@ -320,7 +320,7 @@ client.on('message', async msg => { // eslint disable line
             timestamp: new Date(),
             footer: {
               icon_url: client.user.avatarURL,
-              text: "© ! GH-Azarina"
+              text: "${guild.owner.user.username}"
             }
           }
         });
