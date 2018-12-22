@@ -36,6 +36,28 @@ client.on('ready', () => {
     });
 
 
+client.on('message',async message => {//Toxic Codes
+      if(message.content.startsWith("-restart")){//Toxic Codes
+          if(message.author.id !== "457732668155494402") return message.reply('You aren\'t the bot owner.');
+        message.channel.send('**Restarting.**').then(msg => {//Toxic Codes
+            setTimeout(() => {//Toxic Codes
+               msg.edit('**Restarting..**');
+          //Toxic Codes  },1000);//Toxic Codes
+            setTimeout(() => {
+               msg.edit('**✅ **').then(message =>{message.delete(5000)})
+            },2000);
+    //Toxic Codes    });//Toxic Codes
+        console.log(`Restarting..`);//Toxic Codes
+        setTimeout(() => {
+            client.destroy();
+        },3000);
+    }//Toxic Codes
+});
+
+
+
+
+
 client.on('disconnect', () => console.log('I just disconnected, making sure you know, I will reconnect now...'));
 
 client.on('reconnecting', () => console.log('I am reconnecting now!'));
