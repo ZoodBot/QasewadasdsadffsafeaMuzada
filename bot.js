@@ -30,10 +30,7 @@ LET'S GO!
 
 });
 
-client.on('ready', () => {
-    console.log('Bot Is Ready Now !');
-    client.user.setGame(`inv | -play `,"http://twitch.tv/xkilleryt")
-    });
+
 
 
 
